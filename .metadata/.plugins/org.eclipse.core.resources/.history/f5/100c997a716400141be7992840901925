@@ -1,0 +1,23 @@
+package yahoo;
+
+/*
+ * Note: If the path has to be printed, we have to store in in an array
+ * and refresh the array with the latest values.
+ */
+
+public class findMaxHeightSum {
+		// Function calculates the maximum by finding the depth
+		// This can also be done by calculating the max height
+		// Complexity: O(nodes in the tree)
+		static int maxSum(Node root) {
+			if (root == null)
+				return 0;
+			return Math.max(root.value + maxSum(root.right), root.value
+					+ maxSum(root.left));
+		}
+
+		class Node {
+			int value;
+			Node right, left;
+		}
+}
