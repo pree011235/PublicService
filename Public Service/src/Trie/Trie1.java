@@ -94,8 +94,8 @@ public class Trie1<Value> {
 			if(root.next[c] != null){
 				return root;
 			}
-			return null;
 		}
+		return null;
 	}
 
 	// Prints size of trie
