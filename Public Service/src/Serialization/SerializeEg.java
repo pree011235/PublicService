@@ -12,7 +12,6 @@ class Employee implements Serializable {
 	public String address;
 	public transient int SSN; // Shouldn't be serialized
 	public int number;
-
 	public void mailCheck() {
 		System.out.print(name);
 	}
