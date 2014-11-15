@@ -1,4 +1,4 @@
-package SetOperation;
+package SetOperations;
 
 import java.util.*;
 
